@@ -17,9 +17,8 @@ def loading_model():
 
 model = loading_model()
 
-st.title("""
-Cat 🐱 Or Dog 🐶 Recognizer
-	""")
+
+
 
 st.text("""""")
 image = Image.open("static/title_image.jpg")
@@ -27,6 +26,9 @@ st.image(
 	        image,
 	        use_column_width=True,
 	    )
+st.title("""
+Cat 🐱 Or Dog 🐶 Recognizer
+	""")
 
 
 
@@ -46,7 +48,6 @@ def model_predict(image_path, model):
     return input_pred_label
 
 def main():
-    st.title("Image Classifier")
     file = st.file_uploader("Upload Image",type=['jpg','png','jpeg'])
     if file is not None:
         st.image(file,use_column_width=True)
