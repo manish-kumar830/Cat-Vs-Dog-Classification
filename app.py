@@ -30,6 +30,11 @@ st.title("""
 Cat 🐱 Or Dog 🐶 Recognizer
 	""")
 
+st.title("""
+
+	""")
+
+
 
 
 def model_predict(image_path, model):
