@@ -20,12 +20,7 @@ model = loading_model()
 
 
 
-st.text("""""")
-image = Image.open("static/title_image.jpg")
-st.image(
-	        image,
-	        use_column_width=True,
-	    )
+
 st.title("""
 Cat 🐱 Or Dog 🐶 Recognizer
 	""")
