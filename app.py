@@ -10,12 +10,22 @@ import cv2
 MODEL_PATH = 'models/model.h5'
 
 # Load your trained model
-@st.cache_resource
 def loading_model():
     model = load_model((MODEL_PATH),custom_objects={'KerasLayer':hub.KerasLayer})
     return model
 
 model = loading_model()
+
+st.title("""
+Cat 🐱 Or Dog 🐶 Recognizer
+	""")
+
+st.text("""""")
+image = Image.open('static/title_image.jpg')
+st.image(
+	        image,
+	        use_column_width=True,
+	    )
 
 
 
