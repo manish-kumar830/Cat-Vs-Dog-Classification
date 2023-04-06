@@ -21,7 +21,7 @@ Cat 🐱 Or Dog 🐶 Recognizer
 	""")
 
 st.text("""""")
-image = Image.open('static/title_image.jpg')
+image = Image.open("static/title_image.jpg")
 st.image(
 	        image,
 	        use_column_width=True,
